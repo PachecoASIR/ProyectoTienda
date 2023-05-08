@@ -1,4 +1,3 @@
-
 package Igrafica;
 
 import Conexion.Conexion;
