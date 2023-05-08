@@ -27,8 +27,8 @@ public class Conexion {
    cx=DriverManager.getConnection(url+bd,user,password);
      System.out.println(" Se conecto a la base de datos "+ bd);
    }catch(ClassNotFoundException | SQLException ex){
-       System.out.println("No se conecto");
-   //Logger.getLogger(Conexion.class.getName()).log(Level.SEVERE,null,ex);
+      System.out.println("No se conecto a la base de datos " + bd + ": " + ex.getMessage());
+      Logger.getLogger(Conexion.class.getName()).log(Level.SEVERE,null,ex);
    }
    return  cx;
     }
