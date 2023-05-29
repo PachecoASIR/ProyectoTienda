@@ -19,3 +19,4 @@ Extras:
   - Cifrado hash de la base de datos.
   - Interfaz gráfica para que el usuario pueda navegar de forma amigable por el entorno de la página web.
   - Posibilidad de desplegar el proyecto en Web (Pendiente hasta finalización protecto).
+  - Ticket de compra (Pendiente)
