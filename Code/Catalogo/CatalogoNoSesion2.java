@@ -22,6 +22,7 @@ public class CatalogoNoSesion2 extends javax.swing.JFrame {
         jLabel2.setIcon(new ImageIcon(resizedImg));
         this.setIconImage(img);
         this.setLocationRelativeTo(null);
+        this.setResizable(false);
     }
 
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
