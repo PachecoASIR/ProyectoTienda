@@ -15,7 +15,6 @@ public class Completado extends javax.swing.JFrame {
      */
     public Completado() {
         initComponents();
-        this.setResizable(false);
     }
 
     /**
