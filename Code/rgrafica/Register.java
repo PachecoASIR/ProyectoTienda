@@ -3,7 +3,7 @@ package rgrafica;
 
 
 import Conexion.Conexion;
-import Igrafica.Login;
+import lgrafica.Login;
 import java.sql.Statement;
 import java.sql.SQLException;
 import java.util.logging.Logger;

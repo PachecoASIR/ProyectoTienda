@@ -15,7 +15,6 @@ public class Paypal extends javax.swing.JFrame {
      */
     public Paypal() {
         initComponents();
-        this.setResizable(false);
     }
 
     /**

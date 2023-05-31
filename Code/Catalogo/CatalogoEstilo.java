@@ -4,9 +4,16 @@
  */
 package Catalogo;
 
+import FichasProducto.Caña;
+import FichasProducto.Iphone;
+import FichasProducto.PS5;
+import FichasProducto.Pendientes;
+import FichasProducto.Rolex;
+import FichasProducto.XBOX;
 import java.awt.Image;
 import java.awt.Toolkit;
 import javax.swing.ImageIcon;
+import javax.swing.JLabel;
 
 /**
  *
@@ -15,6 +22,7 @@ import javax.swing.ImageIcon;
 public class CatalogoEstilo extends javax.swing.JFrame {
 
     public CatalogoEstilo() {
+       
         initComponents();
         this.setTitle("Logo");
         Image img = Toolkit.getDefaultToolkit().getImage(getClass().getResource("/Images/Logo2.png"));
@@ -41,6 +49,7 @@ public class CatalogoEstilo extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         Perfil = new javax.swing.JButton();
+        perfil = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
@@ -103,12 +112,32 @@ public class CatalogoEstilo extends javax.swing.JFrame {
         });
 
         jButton4.setText("PS5");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
 
         jButton5.setText("XBox Series X");
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
 
         jButton6.setText("Pendientes Oro 24k");
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
 
         jButton7.setText("Caña Pescar");
+        jButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton7ActionPerformed(evt);
+            }
+        });
 
         jButton2.setText("Página Siguiente");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -132,6 +161,8 @@ public class CatalogoEstilo extends javax.swing.JFrame {
             }
         });
 
+        perfil.setText("jLabel25");
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
@@ -140,6 +171,8 @@ public class CatalogoEstilo extends javax.swing.JFrame {
                 .addGap(29, 29, 29)
                 .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 303, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(perfil)
+                .addGap(184, 184, 184)
                 .addComponent(Perfil)
                 .addGap(46, 46, 46))
         );
@@ -152,7 +185,9 @@ public class CatalogoEstilo extends javax.swing.JFrame {
                         .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGap(56, 56, 56)
-                        .addComponent(Perfil)))
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(Perfil)
+                            .addComponent(perfil))))
                 .addContainerGap(56, Short.MAX_VALUE))
         );
 
@@ -335,9 +370,9 @@ public class CatalogoEstilo extends javax.swing.JFrame {
                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
                                 .addGap(133, 133, 133)
                                 .addComponent(jLabel4)
-                                .addGap(56, 56, 56)
+                                .addGap(54, 54, 54)
                                 .addComponent(jLabel21)
-                                .addGap(39, 39, 39)
+                                .addGap(41, 41, 41)
                                 .addComponent(jLabel23))
                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
                                 .addGap(491, 491, 491)
@@ -422,8 +457,8 @@ public class CatalogoEstilo extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-     public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
+    public static void main(String args[]) {
+
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {
@@ -439,22 +474,52 @@ public class CatalogoEstilo extends javax.swing.JFrame {
             new CatalogoEstilo().setVisible(true);
         });
     }
-     
+
     private void PerfilActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PerfilActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_PerfilActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
+        this.setVisible(false);
+        Iphone c = new Iphone();
+        c.setVisible(true);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
+        this.setVisible(false);
+        CatalogoEstilo2 c = new CatalogoEstilo2();
+        c.setVisible(true);
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        // TODO add your handling code here:
+        this.setVisible(false);
+        Rolex c = new Rolex();
+        c.setVisible(true);
     }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        this.setVisible(false);
+        PS5 c = new PS5();
+        c.setVisible(true);
+    }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        this.setVisible(false);
+        XBOX c = new XBOX();
+        c.setVisible(true);
+    }//GEN-LAST:event_jButton5ActionPerformed
+
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+        this.setVisible(false);
+        Caña c = new Caña();
+        c.setVisible(true);
+    }//GEN-LAST:event_jButton7ActionPerformed
+
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+        this.setVisible(false);
+        Pendientes c = new Pendientes();
+        c.setVisible(true);
+    }//GEN-LAST:event_jButton6ActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton Perfil;
@@ -499,5 +564,7 @@ public class CatalogoEstilo extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel3;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
+    private javax.swing.JLabel perfil;
     // End of variables declaration//GEN-END:variables
+
 }
